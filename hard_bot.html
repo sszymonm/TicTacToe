@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>tic tac toe</title>
+	<meta name="description" content="Tic tac toe is simple game for everyone!">
+	<meta name="keywords" content="kołko, krzyzyk, tic, tac, toe">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/main.css">
+
+</head>
+
+<body>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="two_players.html">Two players mode</a></li>
+            <li><a href="easy_bot.html">Easy mode</a></li>
+            <li class="current"><a href="hard_bot.html">Hard mode</a></li>
+        </ul>
+    </nav>
+
+	<main>
+		<header id="turn" class="main-header">
+			<p id="what"> 
+				Tic-tac-toe <span id='who'></span>
+			</p> 
+		</header>
+
+		
+		<input id="button-start" class="button-start" type="button" value="Start game">
+
+		<div class="container">
+		
+			<div class="row">
+				<div class='field' id='field0' ></div>
+				<div class='field' id='field1' ></div>
+				<div class='field' id='field2' ></div>
+			</div>
+			<div class="row">
+				<div class='field' id='field3'></div>
+				<div class='field' id='field4'></div>
+				<div class='field' id='field5'></div>
+			</div>
+			<div class="row">
+				<div class='field' id='field6'></div>
+				<div class='field' id='field7'></div>
+				<div class='field' id='field8'></div>
+			</div>
+
+		</div>
+
+		<p id='info' class="info"> </p>
+	</main>
+
+	<script type="module" src="./js/HardModeBot.js"></script>
+</body>
+
+
+</html>
